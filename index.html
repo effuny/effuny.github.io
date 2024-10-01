@@ -1,1 +1,33 @@
-hello
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>기본 웹 페이지</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+            padding: 20px;
+            background-color: #f4f4f4;
+        }
+        button {
+            padding: 10px 15px;
+            font-size: 16px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <h1>환영합니다!</h1>
+    <p>버튼을 클릭하면 메시지가 표시됩니다.</p>
+    <button id="myButton">클릭하세요</button>
+    <p id="message"></p>
+
+    <script>
+        document.getElementById('myButton').addEventListener('click', function() {
+            document.getElementById('message').innerText = '버튼이 클릭되었습니다!';
+        });
+    </script>
+</body>
+</html>
